@@ -6,7 +6,7 @@
 ## Installing
 
 ```shell
-$ composer require caojiabin2012/payment -vvv
+$ composer require doper/payment -vvv
 ```
 
 ## Usage
