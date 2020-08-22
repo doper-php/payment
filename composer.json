@@ -1,6 +1,6 @@
 {
     "name": "doper/payment",
-    "description": "A PHP package template repository.",
+    "description": "支付SDK",
     "license": "MIT",
     "authors": [
         {
