@@ -1,6 +1,6 @@
 <h1 align="center">PHP Package Template </h1>
 
-<p align="center"> A template repository for PHP package.</p>
+<p align="center"> Doper Payment.</p>
 
 
 ## Installing
