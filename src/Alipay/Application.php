@@ -1,9 +1,9 @@
 <?php
 
-namespace Doper\Payment\Wechat;
+namespace Doper\Payment\Alipay;
 
 /**
- * Wechat SDK
+ * Alipay SDK
  */
 class Application
 {
@@ -23,7 +23,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_SCAN';
+            $params['service_type'] = 'ALIPAY_SCAN';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -46,7 +46,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_MICRO';
+            $params['service_type'] = 'ALIPAY_MICRO';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -69,7 +69,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_JSAPI_OAUTH';
+            $params['service_type'] = 'ALIPAY_JSAPI_OAUTH';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -92,7 +92,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_JSAPI_OAUTH';
+            $params['service_type'] = 'ALIPAY_JSAPI_OAUTH';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -115,7 +115,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_ORDERQUERY';
+            $params['service_type'] = 'ALIPAY_ORDERQUERY';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -133,7 +133,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_CLOSE';
+            $params['service_type'] = 'ALIPAY_CLOSE';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -157,7 +157,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_REVOKE';
+            $params['service_type'] = 'ALIPAY_REVOKE';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -180,7 +180,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_REFUND';
+            $params['service_type'] = 'ALIPAY_REFUND';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
@@ -203,7 +203,7 @@ class Application
     {
         try {
             // 组装参数
-            $params['service_type'] = 'WECHAT_REFUNDQUERY';
+            $params['service_type'] = 'ALIPAY_REFUNDQUERY';
             $params['agent_num'] = $this->config['agentNum'];
             $params['mch_id'] = $this->config['mchId'];
             $params['sign'] = $this->signContract($params);
